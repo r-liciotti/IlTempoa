@@ -1,0 +1,91 @@
+body,html{
+    height:100%;
+}
+
+
+
+ .hide{
+   display: none;
+ }
+ .container{
+   padding-top: 200px;
+
+ }
+
+ .cerca button:nth-of-type(1){
+   padding: 0px;
+border-color: #ced4da;
+ }
+ .cerca button:nth-of-type(1):hover{
+   background-color: white;
+}
+
+.cerca img{
+  width: 40%;
+}
+
+
+.table td, .table th {
+      padding: 0.55rem;
+      width: 33.3%;
+}
+.ore tr td:nth-child(3){
+  padding: 2px;
+}
+
+
+/* .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.06);
+}
+.table td, .table th {
+    border-top: 1px solid #007fff1f;
+} */
+
+.ore tr td img{
+  width: 20%;
+}
+
+.main{
+  max-height: 125px;
+
+}
+.main .card-body{
+  z-index: 3;
+  border-color: white;
+
+}
+
+
+.citta{
+  border: 0;
+}
+.citta .NomeCitta{
+  text-align: center;
+  font-size: 65px;
+}
+.giorno{
+  font-size: 40px;
+}
+.tempo{
+  font-size: 30px;
+
+}
+.tempo:first-letter {
+
+text-transform: uppercase;
+
+}
+
+.citta img{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.altreInfo{
+  margin-bottom: 25px;
+  text-align: center;
+
+}
+.altreInfo img{
+  width: 20%;
+}

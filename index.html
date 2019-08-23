@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Hereather - Meteo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-lg-7">
+        <div class=" card w-100 main" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Il Tempo a </h5>
+            <h5>
+              <div class="cerca input-group mb-3">
+                <input id="citta" type="text" class="form-control" placeholder="Citta?" aria-label="Citta" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-outline-primary" onclick="getWeatherLoc()"><img src="icone/placeholder.png" alt=""></button>
+                  <button type="button" class="btn btn-primary" onclick="getWeather()">Cerca</button>
+                </input>
+                </div>
+              </div>
+            </h5>
+
+            </a>
+          </div>
+          <div class="card citta animated  hide">
+            <h1 class="card-title  NomeCitta">Citta</h1>
+            <img src="#" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title giorno">Giorno, 10</h5>
+              <p class="card-text tempo">tempo</p>
+                <table class="table table-striped m-auto">
+                  <tbody class="ore">
+                    <tr>
+                      <td>00:00</td>
+                      <td>30C</td>
+                      <td><img src="#"  alt="..."></td>
+                    </tr>
+                    <tr>
+                      <td>03:00</td>
+                      <td>23C</td>
+                      <td><img src="#"  alt="..."></td>
+                    </tr>
+                    <tr>
+                      <td>06:00</td>
+                      <td>32C</td>
+                      <td><img src="#"  alt="..."></td>
+
+                    </tr>
+                    <tr>
+                      <td>09:00</td>
+                      <td>34C</td>
+                      <td><img src="#"  alt="..."></td>
+
+                    </tr>
+                    <tr>
+                      <td>12:00</td>
+                      <td>22C</td>
+                      <td><img src="#"  alt="..."></td>
+
+                    </tr>
+                    <tr>
+                      <td>15:00</td>
+                      <td>25C</td>
+                      <td><img src="#"  alt="..."></td>
+
+                    </tr>
+                    <tr>
+                      <td>18:00</td>
+                      <td>27C</td>
+                      <td><img src="#"  alt="..."></td>
+
+                    </tr>
+                    <tr>
+                      <td>21:00</td>
+                      <td>37C</td>
+                      <td><img src="#"  alt="..."></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+              <!-- <p class="card-text"><small class="text-muted aggiornamento">Last update </small></p> -->
+              <div class="row altreInfo mt-3">
+                <div class="col-4">
+                  <img src="icone/t-min.png" alt="temperatura minima">
+                  <span class="t-min">30°</span>
+                </div>
+                <div class="col-4">
+                  <img src="icone/t-max.png" alt="temperatura massima">
+                  <span class="t-max">30°</span>
+                </div>
+                <div class="col-4">
+                  <img src="icone/umidita.png" alt="umidita">
+                  <span class="umidita">30°</span>
+                </div>
+              </div>
+              <!-- <div class="text-center">
+                <button class="btn btn-primary informazioni" onclick="moreInfo()">Altre Informazioni</button>
+                <p class="more"></p>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" charset="utf-8"></script>
+  <script src="js/custom.js" charset="utf-8"></script>
+
+</body>
+
+</html>
